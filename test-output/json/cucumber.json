@@ -1,0 +1,127 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-05T06:23:28.868Z",
+        "line": 11,
+        "name": "login postive test",
+        "description": "",
+        "id": "facebook-login-test;login-postive-test;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20033925700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open chrome and run application",
+            "match": {
+              "location": "com.selenium.StepDefinitions.LoginStepDefinition.open_chrome_and_run_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1125462900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter valid \"vrt1\" and \"vrt1pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vrt1\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"vrt1pass\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.selenium.StepDefinitions.LoginStepDefinition.i_enter_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 132934900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be loggedin successfully",
+            "match": {
+              "location": "com.selenium.StepDefinitions.LoginStepDefinition.user_should_be_loggedin_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-05T06:23:50.292Z",
+        "line": 12,
+        "name": "login postive test",
+        "description": "",
+        "id": "facebook-login-test;login-postive-test;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24106514600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open chrome and run application",
+            "match": {
+              "location": "com.selenium.StepDefinitions.LoginStepDefinition.open_chrome_and_run_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 538665800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter valid \"vrt2\" and \"vrt2pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vrt2\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"vrt2pass\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.selenium.StepDefinitions.LoginStepDefinition.i_enter_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111930500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be loggedin successfully",
+            "match": {
+              "location": "com.selenium.StepDefinitions.LoginStepDefinition.user_should_be_loggedin_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Facebook login test",
+    "description": "",
+    "id": "facebook-login-test",
+    "keyword": "Feature",
+    "uri": "file:features/Sample.feature",
+    "tags": []
+  }
+]
