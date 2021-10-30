@@ -5,40 +5,30 @@
 	<groupId>CucumbeMaven</groupId>
 	<artifactId>CucumbeMaven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-<!--   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <cucumber-jvm.version>1.1.5</cucumber-jvm.version>
-    <selenium.version>2.39.0</selenium.version>
-    <junit.version>4.11</junit.version>
-  </properties> -->
+	<!-- <properties> <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+		<cucumber-jvm.version>1.1.5</cucumber-jvm.version> <selenium.version>2.39.0</selenium.version> 
+		<junit.version>4.11</junit.version> </properties> -->
 
 	<dependencies>
 		<!-- dependency exclusion -->
-		<!-- <dependency> 
-				<groupId>xxxxx</groupId> 
-			 	<artifactId>Project B</artifactId> 
-				<version>xxxx</version> 
-				<scope>compile</scope> 
-				<exclusions> 
-					<exclusion> 
-						<artifactId>Project G</artifactId> 
-						<groupId>xxxxxx</groupId> 
-					</exclusion> 
-				</exclusions> 
-			</dependency> -->
-			
+		<!-- <dependency> <groupId>xxxxx</groupId> <artifactId>Project B</artifactId> 
+			<version>xxxx</version> <scope>compile</scope> <exclusions> <exclusion> <artifactId>Project 
+			G</artifactId> <groupId>xxxxxx</groupId> </exclusion> </exclusions> </dependency> -->
+
 		<!-- To declare dependency as optional -->
-		<!-- <dependency> 
-				<groupId>sample.ProjectA</groupId> 
-				<artifactId>Project-A</artifactId> 
-				<version>1.0</version> 
-				<scope>compile</scope> 
-				<optional>true</optional> value will be true or false only 
-			</dependency> -->
+		<!-- <dependency> <groupId>sample.ProjectA</groupId> <artifactId>Project-A</artifactId> 
+			<version>1.0</version> <scope>compile</scope> <optional>true</optional> value 
+			will be true or false only </dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.12.10</version>
+		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -101,23 +91,21 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M4</version>
 				<configuration>
-				<!-- properties below sets the configuration for the parallel execution -->
+					<!-- properties below sets the configuration for the parallel execution -->
 					<!--<properties> <property> <name>parallel</name> <value>methods</value> 
 						</property> <property> <name>threadCount</name> <value>3</value> </property> 
 						<property> <name>dataproviderthreadcount</name> <value>6</value> </property> 
-						</properties>
-					<suiteXmlFiles> <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> </suiteXmlFiles>
-					<systemPropertyVariables> <propertyName>${browserType}</propertyName> 
+						</properties> <suiteXmlFiles> <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> 
+						</suiteXmlFiles> <systemPropertyVariables> <propertyName>${browserType}</propertyName> 
 						</systemPropertyVariables> -->
-					<!-- Specifies test suite to continue the run for remaining even if any test got failed-->
+					<!-- Specifies test suite to continue the run for remaining even if 
+						any test got failed -->
 					<testFailureIgnore>true</testFailureIgnore>
-						<!-- fork count lets u run the tests in parallel processes not threads-->
-						<!--<forkCount>3</forkCount>-->
-<!-- 					<includes>
-						verifies if any test runner class is available with the following
-							name and start test execution
-						<exclude>**/*TestRunner.java</exclude>
-					</includes> -->
+					<!-- fork count lets u run the tests in parallel processes not threads -->
+					<!--<forkCount>3</forkCount> -->
+					<!-- <includes> verifies if any test runner class is available with 
+						the following name and start test execution <exclude>**/*TestRunner.java</exclude> 
+						</includes> -->
 				</configuration>
 			</plugin>
 			<plugin>
