@@ -81,9 +81,9 @@ public class LoginStepDefinition {
 	}
 
 	@Then("User should be loggedin successfully")
-	public void user_should_be_loggedin() {
+	public void user_should_be_loggedin_develop_master() {
 		driver.findElement(By.cssSelector("button[type = 'submit']")).click();
-		System.out.println("Step 3 is executed successfully master updated");
+		System.out.println("Step 3 is executed successfully commit from develop and master");
 
 	}
 
