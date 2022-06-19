@@ -93,6 +93,7 @@ public class LoginStepDefinition {
 		driver.findElement(By.cssSelector("button[type = 'submit']")).click();
 		System.out.println("Step 3 is executed successfully commit from develop");
 		System.out.println("Step 3 is executed successfully master rebase on develop and forward from master");
+		System.out.println("Step 4 is added from develop");
 		System.out.println("Step 5 is added from master");
 
 	}
