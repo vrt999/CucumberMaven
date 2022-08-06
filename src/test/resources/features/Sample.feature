@@ -4,6 +4,8 @@ Feature: Facebook login test
 Background: User is Logged In
  Given I navigate to the login page
  When I submit username and password
+       | username | password |
+      | vrt3     | vrt3pass |
  Then I should be logged in 
 
   #		Scenario: login postive test - format should be this when passing direct paraameters
@@ -17,6 +19,7 @@ Background: User is Logged In
       #| vrt1     | vrt1pass |
       #| vrt2     | vrt2pass |
 
+  @run
   Scenario: login postive test  #format should be this when passing direct paraameters
     #Scenario Outline: login postive test
     Given open chrome and run application
